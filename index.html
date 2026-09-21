@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SRIDEVI LOTTERY RESULT</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#070a0f;color:#fff;font-family:Arial,Helvetica,sans-serif}
+header{background:#090c12;border-bottom:1px solid #303744;padding:15px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5}
+.logo{font:800 25px Georgia;color:#f4c63d;letter-spacing:1px}
+.bell{font-size:22px}
+main{max-width:720px;margin:auto;padding:15px 12px 90px}
+.page{display:none}.page.active{display:block}
+.hero{border:1px solid #806719;border-radius:16px;padding:24px;text-align:center;background:radial-gradient(circle at 50% 20%,#4d3907,#11151c 60%)}
+.hero h1{margin:0;color:#f4c63d;font:800 32px Georgia}
+.hero p{font-weight:700;margin:8px 0 15px}
+.btn{background:#f4c63d;color:#111;border:0;border-radius:9px;padding:11px 18px;font-weight:800}
+.balance{margin:13px 0;background:linear-gradient(135deg,#281144,#0f1722);border:1px solid #8d5cc4;border-radius:14px;padding:15px;display:flex;align-items:center;justify-content:space-between}
+.balance small{display:block;color:#c6b8d5}.balance strong{display:block;font-size:25px;color:#fff;margin-top:4px}
+.balance .coin{font-size:30px}
+.notice{padding:12px;background:#151b24;border-left:3px solid #f4c63d;border-radius:7px;color:#bfc6d0;font-size:13px;margin:12px 0}
+h2{font-size:19px}.section{display:flex;justify-content:space-between;align-items:center;margin:19px 2px 9px}.section span{color:#f4c63d;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.tile{background:#111720;border:1px solid #303744;border-radius:12px;padding:18px;text-align:center;cursor:pointer}
+.icon{font-size:29px;margin-bottom:7px}
+.market{background:#111720;border:1px solid #303744;border-radius:14px;margin:10px 0;overflow:hidden}
+.markethead{display:flex;justify-content:space-between;align-items:center;padding:14px 14px 8px}
+.marketname{font-size:18px;font-weight:900;letter-spacing:.3px}
+.status{font-size:10px;background:#17371f;color:#76e28c;padding:5px 8px;border-radius:20px;font-weight:800}
+.numbers{text-align:center;color:#f4c63d;font-size:28px;font-weight:900;letter-spacing:2px;padding:5px 10px 4px}
+.times{display:flex;justify-content:center;gap:28px;color:#d7dce4;font-size:13px;padding:5px 10px 14px}
+.times span{color:#aeb5c0}.times b{color:#fff}
+.tabs{display:flex;gap:6px;overflow:auto;margin:12px 0}
+.tabs button{white-space:nowrap;background:#151b24;color:#fff;border:1px solid #303744;border-radius:8px;padding:9px 14px}
+.tabs button.on{background:#f4c63d;color:#111}
+.row{background:#111720;border:1px solid #303744;border-radius:10px;padding:14px;margin:9px 0;display:flex;justify-content:space-between}
+.gold{color:#f4c63d}
+.profile{background:#111720;border:1px solid #303744;border-radius:14px;padding:20px;text-align:center}
+.menu div{padding:14px;border-top:1px solid #303744;text-align:left}
+nav{position:fixed;bottom:0;left:0;right:0;background:#090c12;border-top:1px solid #303744;display:flex;justify-content:space-around;padding:8px;z-index:6}
+nav button{background:none;border:0;color:#9da5b1;font-size:11px}
+nav button span{display:block;font-size:20px;margin-bottom:2px}
+nav button.active{color:#f4c63d}
+footer{text-align:center;color:#68717e;font-size:11px;margin-top:18px}
+@media(min-width:650px){.grid{grid-template-columns:repeat(4,1fr)}}
+.editable{cursor:pointer;position:relative}.edit-hint{font-size:10px;color:#8d96a3;margin-top:3px}
+.edit-input{background:#0a0e14;color:#f4c63d;border:1px solid #f4c63d;border-radius:7px;padding:6px;font-weight:800;text-align:center;max-width:95%}
+.balance .edit-input{font-size:24px;width:170px}
+.numbers .edit-input{font-size:28px;width:95%}
+</style>
+</head>
+<body>
+<header><div class="logo">♛ SRIDEVI LOTTERY</div><div class="bell">♧</div></header>
+
+<main>
+<section id="home" class="page active">
+<div class="hero"><h1>SRIDEVI<br>LOTTERY</h1><p>RESULT INFORMATION</p><button class="btn" onclick="go('results')">VIEW RESULTS</button></div>
+
+<div class="balance">
+<div><small>Account Balance</small><strong id="balanceValue">₹ 5,280.00</strong></div><div class="coin">💰</div>
+</div>
+
+<div class="notice">Latest market results and result times are shown below.</div>
+<div class="section"><h2>LIVE RESULTS</h2><span onclick="go('results')">See All</span></div>
+<div id="homeList"></div>
+</section>
+
+<section id="games" class="page">
+<h2>ALL MARKETS</h2>
+<div class="tabs"><button class="on" onclick="showAll()">ALL</button></div>
+<div id="gameList"></div>
+</section>
+
+<section id="results" class="page">
+<h2>RESULTS</h2>
+<div class="tabs"><button class="on">TODAY</button><button onclick="go('history')">HISTORY</button></div>
+<div id="resultList"></div>
+</section>
+
+<section id="history" class="page">
+<h2>RESULT HISTORY</h2>
+<div class="notice">Previous published result information.</div>
+<div class="row"><b>28 MAY 2025</b><span class="gold">VIEW ›</span></div>
+<div class="row"><b>27 MAY 2025</b><span class="gold">VIEW ›</span></div>
+<div class="row"><b>26 MAY 2025</b><span class="gold">VIEW ›</span></div>
+</section>
+
+<section id="chart" class="page">
+<h2>CHART</h2><div id="chartList"></div>
+</section>
+
+<section id="vip" class="page">
+<h2>VIP ZONE</h2><div class="profile"><div class="icon">♛</div><h2 class="gold">VIP INFORMATION</h2><p>Premium result information section.</p></div>
+</section>
+
+<section id="offers" class="page">
+<h2>OFFERS</h2><div class="row"><div><b>Result Updates</b><br><small>Latest information</small></div><span class="gold">›</span></div>
+<div class="row"><div><b>Announcements</b><br><small>Important notices</small></div><span class="gold">›</span></div>
+</section>
+
+<section id="help" class="page">
+<h2>HELP & SUPPORT</h2><div class="profile"><p>Home → latest results</p><p>Results → current published results</p><p>Chart → chart information</p><p>History → previous results</p></div>
+</section>
+
+<section id="profile" class="page">
+<h2>PROFILE</h2><div class="profile"><div style="font-size:52px">👤</div><h2>Sridevi User</h2><p style="color:#aeb5c0">Result information account</p><div class="menu"><div>My Profile ›</div><div>Notifications ›</div><div onclick="go('help')">Help & Support ›</div></div></div>
+</section>
+<footer>SRIDEVI LOTTERY RESULT • Information Website</footer>
+</main>
+
+<nav>
+<button data-p="home" onclick="go('home')"><span>⌂</span>Home</button>
+<button data-p="games" onclick="go('games')"><span>◉</span>Markets</button>
+<button data-p="results" onclick="go('results')"><span>▣</span>Results</button>
+
+<button data-p="profile" onclick="go('profile')"><span>●</span>Profile</button>
+</nav>
+
+<script>
+const markets=[
+["SRIDEVI","337-37-278","11:35 AM","12:35 PM","DAY"],
+["KALYAN","168-50-145","04:02 PM","06:02 PM","DAY"],
+["SRIDEVI NIGHT","358-60-370","07:15 PM","08:15 PM","NIGHT"],
+["MILAN NIGHT","240-61-290","09:10 PM","11:10 PM","NIGHT"],
+["MAIN BAZAR","367-69-126","10:00 PM","12:10 AM","SPECIAL"]
+];
+function marketCard(x){
+return `<article class="market">
+<div class="markethead"><div class="marketname">${x[0]}</div><div class="status">PUBLISHED</div></div>
+<div class="numbers editable">${x[1]}</div>
+<div class="times"><div><span>OPEN</span><br><b>${x[2]}</b></div><div><span>CLOSE</span><br><b>${x[3]}</b></div></div>
+</article>`;
+}
+function render(a=markets){
+homeList.innerHTML=a.slice(0,3).map(marketCard).join('');
+gameList.innerHTML=a.map(marketCard).join('');
+resultList.innerHTML=a.map(marketCard).join('');
+chartList.innerHTML=a.map(x=>`<div class="row"><div><b>${x[0]}</b><br><small>${x[2]} - ${x[3]}</small></div><strong class="gold">${x[1]}</strong></div>`).join('');
+}
+function saveData(){
+localStorage.setItem('sridevi_markets', JSON.stringify(markets));
+localStorage.setItem('sridevi_balance', document.getElementById('balanceValue').textContent);
+}
+function loadData(){
+try{
+ const saved=JSON.parse(localStorage.getItem('sridevi_markets'));
+ if(Array.isArray(saved)&&saved.length) markets.splice(0,markets.length,...saved);
+ const b=localStorage.getItem('sridevi_balance');
+ if(b) document.getElementById('balanceValue').textContent=b;
+}catch(e){}
+}
+
+function go(id){
+document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x.dataset.p==id));
+scrollTo(0,0);
+}
+function filterType(t){go('games');gameList.innerHTML=markets.map(marketCard).join('')}
+function showAll(){gameList.innerHTML=markets.map(marketCard).join('')}
+loadData();render();document.querySelector('nav button').classList.add('active');document.getElementById('balanceValue').ondblclick=function(){editBalance(this)};
+
+try { const b=localStorage.getItem('srideviBalance'); if(b!==null){const el=document.getElementById('balanceValue'); if(el) el.textContent='₹ '+Number(b).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});} const ms=JSON.parse(localStorage.getItem('srideviMarkets')||'null'); if(ms&&Array.isArray(ms)){/* admin values are intended for same-browser display */} } catch(e){}
+</script>
+</body>
+</html>
