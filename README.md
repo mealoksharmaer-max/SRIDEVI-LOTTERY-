@@ -1,4 +1,3 @@
-# SRIDEVI-LOTTERY-
 <!doctype html>
 <html lang="en">
 <head>
@@ -57,9 +56,9 @@ footer{text-align:center;color:#68717e;font-size:11px;margin-top:18px}
 <main>
 <section id="home" class="page active">
 <div class="hero"><h1>SRIDEVI<br>LOTTERY</h1><p>RESULT INFORMATION</p><button class="btn" onclick="go('results')">VIEW RESULTS</button></div>
-
+7
 <div class="balance">
-<div><small>Account Balance</small><strong id="balanceValue">₹1500 minimum deposit</strong></div><div class="coin">💰</div>
+<div><small>Account Balance</small><strong id="balanceValue">₹ minimum700WHATAAP 9640802172</strong></div><div class="coin">💰</div>
 </div>
 
 <div class="notice">Latest market results and result times are shown below.</div>
@@ -120,7 +119,7 @@ footer{text-align:center;color:#68717e;font-size:11px;margin-top:18px}
 
 <script>
 const markets=[
-["MILAN DAY"," 876-63-277,"02:05 AM","02:35 PM","DAY"],
+["SRIDEVI","337-37-278","11:35 AM","12:35 PM","DAY"],
 ["KALYAN","168-50-145","04:02 PM","06:02 PM","DAY"],
 ["SRIDEVI NIGHT","358-60-370","07:15 PM","08:15 PM","NIGHT"],
 ["MILAN NIGHT","240-61-290","09:10 PM","11:10 PM","NIGHT"],
