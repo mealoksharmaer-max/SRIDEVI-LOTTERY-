@@ -123,7 +123,7 @@ const markets=[
 ["KALYAN","168-50-145","04:02 PM","06:02 PM","DAY"],
 ["SRIDEVI NIGHT","358-60-370","07:15 PM","08:15 PM","NIGHT"],
 ["MILAN NIGHT","240-61-290","09:10 PM","11:10 PM","NIGHT"],
-["MAIN BAZAR","367-69-126","10:00 PM","12:10 AM","SPECIAL"]
+["shivadas night","367-69-126","10:00 PM","12:10 AM","SPECIAL"]
 ];
 function marketCard(x){
 return `<article class="market">
