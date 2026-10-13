@@ -58,7 +58,7 @@ footer{text-align:center;color:#68717e;font-size:11px;margin-top:18px}
 <div class="hero"><h1>SRIDEVI<br>LOTTERY</h1><p>RESULT INFORMATION</p><button class="btn" onclick="go('results')">VIEW RESULTS</button></div>
 7
 <div class="balance">
-<div><small>Account Balance</small><strong id="balanceValue">₹500 veeresh </strong></div><div class="coin">💰</div>
+<div><small>Account Balance</small><strong id="balanceValue">₹85000 veeresh </strong></div><div class="coin">💰</div>
 </div>
 
 <div class="notice">Latest market results and result times are shown below.</div>
@@ -123,7 +123,7 @@ const markets=[
 ["KALYAN","168-50-145","04:02 PM","06:02 PM","DAY"],
 ["SRIDEVI NIGHT","358-60-370","07:15 PM","08:15 PM","NIGHT"],
 ["MILAN NIGHT","240-61-290","09:10 PM","11:10 PM","NIGHT"],
-["shivadas night","367-69-126","10:00 PM","12:10 AM","SPECIAL"]
+["shivadas night","700-76-661","10:00 PM","12:10 AM","SPECIAL"]
 ];
 function marketCard(x){
 return `<article class="market">
