@@ -58,7 +58,7 @@ footer{text-align:center;color:#68717e;font-size:11px;margin-top:18px}
 <div class="hero"><h1>SRIDEVI<br>LOTTERY</h1><p>RESULT INFORMATION</p><button class="btn" onclick="go('results')">VIEW RESULTS</button></div>
 7
 <div class="balance">
-<div><small>Account Balance</small><strong id="balanceValue">₹DEPOSIT 700 whatsapp 8096500274 </strong></div><div class="coin">💰</div>
+<div><small>Account Balance</small><strong id="balanceValue">₹DEPOSIT 700 whatsapp 9640907185 </strong></div><div class="coin">💰</div>
 </div>
 
 <div class="notice">Latest market results and result times are shown below.</div>
